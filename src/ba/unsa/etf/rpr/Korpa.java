@@ -1,8 +1,9 @@
 package ba.unsa.etf.rpr;
 
 public class Korpa {
-    private Artikl[] korpa = new Artikl[50] ;
-    private static int duzina = 0;
+    private Artikl[] korpa;
+    private static int duzina;
+    Korpa() { duzina=0; korpa = new Artikl[50]; }
     public Artikl[] getArtikli() {
         return korpa;
     }

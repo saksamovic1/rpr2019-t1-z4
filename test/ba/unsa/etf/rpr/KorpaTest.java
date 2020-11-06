@@ -12,12 +12,10 @@ class KorpaTest {
         b.dodajArtikl(new Artikl("Biciklo", 100, "20"));
         assertEquals(1, b.getDuzina());
     }
-
     @Test
     void izbaciArtiklSaKodom() {
         Korpa b = new Korpa();
         b.dodajArtikl(new Artikl("Biciklo", 100, "20"));
         assertNotNull(b.izbaciArtiklSaKodom("20"));
     }
-
 }

@@ -6,6 +6,7 @@ public class Korpa {
     public Artikl[] getArtikli() {
         return korpa;
     }
+    public int getDuzina() { return duzina;}
     public boolean dodajArtikl(Artikl a) {
         if (duzina < 50) {
             korpa[duzina]=a;

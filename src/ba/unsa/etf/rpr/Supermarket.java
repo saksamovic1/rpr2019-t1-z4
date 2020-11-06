@@ -3,6 +3,7 @@ package ba.unsa.etf.rpr;
 public class Supermarket {
     private static Artikl[] supermarket = new Artikl[1000];
     private static int duzina = 0;
+    public int getDuzina() { return duzina; }
     public void dodajArtikl(Artikl a) {
         if (duzina<1000) {
             supermarket[duzina]=a;
